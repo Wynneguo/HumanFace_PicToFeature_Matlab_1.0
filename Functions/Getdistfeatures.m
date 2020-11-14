@@ -1,5 +1,6 @@
 function Getdistfeatures(SampleNames,Path_template_lm,Path_of_Samplelm,Path_output)
 %Path_template_lm (27*4)
+template_lm=importdata(Path_template_lm);
 lm_mark=template_lm(:,1);%the mark of points
 num_of_points=size(template_lm,1);
 PointsCombinations=combntns([1:num_of_points],2); % combination of all the distance conditions
